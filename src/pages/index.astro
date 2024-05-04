@@ -13,6 +13,7 @@ import tutTerminal from "../../assets/terminal.gif";
 
 <Default>
     <h1>{gt.gettext("astro-po-i18n")}</h1>
+    <h2>{gt.gettext("The alternate way of translating Astro")}</h2>
     <p
         set:html={gt.gettext(
             "With this skeleton for astro, you can jumpstart an multilingual site that is translated via standard gettext and <code>.po</code> files.",
@@ -69,7 +70,7 @@ import tutTerminal from "../../assets/terminal.gif";
             😢 {gt.gettext("no support for SSR. This is SSG only")}
         </li>
     </ul>
-    <h2>{gt.gettext("1. Install")}</h2>
+    <h3>{gt.gettext("1. Install")}</h3>
     <p>
         {
             gt.gettext(
@@ -86,9 +87,9 @@ import tutTerminal from "../../assets/terminal.gif";
         <li><code><tt>npm i</tt></code></li>
     </ol>
 
-    <h2>
+    <h3>
         {gt.gettext("2. Adjust your setup")}
-    </h2>
+    </h3>
     <p
         set:html={gt.gettext(
             "Specify which languages you wish to support and which is your main one, within <code><tt>utils/i18n.js</tt></code>:",
@@ -114,7 +115,7 @@ const locales = ["en", "de", "es"];`}
     />
     <Code code={`rm -rf ./locales/*`} lang="sh" />
 
-    <h2>{gt.gettext("3. Place your texts")}</h2>
+    <h3>{gt.gettext("3. Place your texts")}</h3>
     <p
         set:html={gt.gettext(
             "There are two workflow flavours in the gettext-communities. The common way is to just place your texts in your main language (commonly english) directly within your templates. That way you are not using keys and give translators a better context of what you want to be translated. It also makes sure that your main language is always fully translated.",
@@ -133,10 +134,10 @@ const locales = ["en", "de", "es"];`}
         )}
     />
 
-    <h3>
+    <h4>
         {gt.gettext("Direct placing")}
         <small>{gt.gettext("Example")}</small>
-    </h3>
+    </h4>
     <Code
         code={`---
 import gt from "../utils/i18n";
@@ -150,10 +151,10 @@ import sprintf from "sprintf-js";
         lang="astro"
     />
 
-    <h3>
+    <h4>
         {gt.gettext("Keyed placing")}
         <small>{gt.gettext("Example")}</small>
-    </h3>
+    </h4>
     <Code
         code={`---
 import gt from "../utils/i18n";
@@ -165,7 +166,7 @@ import gt from "../utils/i18n";
         lang="astro"
     />
 
-    <h3>{gt.gettext("3b. Placing links")}</h3>
+    <h4>{gt.gettext("3b. Placing links")}</h4>
     <p
         set:html={gt.gettext(
             "This skeleton also comes with a helper to place localized links within your project.",
@@ -182,7 +183,7 @@ import { url } from "../utils/i18n";
         lang="astro"
     />
 
-    <h2>{gt.gettext("4. Start translating")}</h2>
+    <h3>{gt.gettext("4. Start translating")}</h3>
     <p
         set:html={gt.gettext(
             "This tutorial continues using <a href='https://poedit.net/'>Poedit</a> which is a powerful and commonly used tool for handling po-files. You are free to use any of the various alternatives though.",
