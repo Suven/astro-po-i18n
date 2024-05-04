@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"POT-Creation-Date: 2024-05-04 20:07+0200\n"
-"PO-Revision-Date: 2024-05-04 20:08+0200\n"
+"POT-Creation-Date: 2024-05-04 20:14+0200\n"
+"PO-Revision-Date: 2024-05-04 20:14+0200\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: es\n"
@@ -14,7 +14,8 @@ msgstr ""
 "X-Poedit-Mapping: astro=gettext:JavaScript\n"
 "X-Poedit-SearchPath-0: .\n"
 
-#: layouts/default.astro:45 layouts/default.astro:83 pages/index.astro:15
+#: layouts/default.astro:17 layouts/default.astro:46 layouts/default.astro:84
+#: pages/index.astro:15
 msgid "astro-po-i18n"
 msgstr "astro-po-i18n"
 
@@ -75,20 +76,24 @@ msgid "no translatable URLs"
 msgstr "sin URL traducibles"
 
 #: pages/index.astro:69
+msgid "no support for SSR. This is SSG only"
+msgstr "no es compatible con SSR. Esto es sólo SSG"
+
+#: pages/index.astro:72
 msgid "1. Install"
 msgstr "1. Instala"
 
-#: pages/index.astro:73
+#: pages/index.astro:76
 msgid "Just run these two commands, to receive this basic skeleton:"
 msgstr ""
 "Sólo tienes que ejecutar estos dos comandos, para recibir este esqueleto "
 "básico:"
 
-#: pages/index.astro:87
+#: pages/index.astro:90
 msgid "2. Adjust your setup"
 msgstr "2. Ajusta tu configuración"
 
-#: pages/index.astro:91
+#: pages/index.astro:94
 msgid ""
 "Specify which languages you wish to support and which is your main one, "
 "within <code><tt>utils/i18n.js</tt></code>:"
@@ -96,7 +101,7 @@ msgstr ""
 "Especifica qué idiomas deseas admitir y cuál es el principal, dentro de "
 "<code><tt>utils/i18n.js</tt></code>:"
 
-#: pages/index.astro:102
+#: pages/index.astro:105
 msgid ""
 "For SEO-safety you are also advised to configure your final domain within "
 "<code><tt>astro.config.mjs</tt></code>:"
@@ -104,15 +109,15 @@ msgstr ""
 "Por seguridad SEO, también se recomienda configurar el dominio final en "
 "<code><tt>astro.config.mjs</tt></code>:"
 
-#: pages/index.astro:109
+#: pages/index.astro:112
 msgid "You might also want to delete all already shipped translations"
 msgstr "Puede que también quieras borrar todas las traducciones ya enviadas"
 
-#: pages/index.astro:114
+#: pages/index.astro:117
 msgid "3. Place your texts"
 msgstr "3. Coloca tus textos"
 
-#: pages/index.astro:117
+#: pages/index.astro:120
 msgid ""
 "There are two workflow flavours in the gettext-communities. The common way "
 "is to just place your texts in your main language (commonly english) "
@@ -126,7 +131,7 @@ msgstr ""
 "das a los traductores un mejor contexto de lo que quieres traducir. También "
 "te aseguras de que tu idioma principal esté siempre totalmente traducido."
 
-#: pages/index.astro:123
+#: pages/index.astro:126
 msgid ""
 "The other approach uses keys, that then first need to be translated into "
 "your main language. It leaves your content responsible colleagues more "
@@ -140,7 +145,7 @@ msgstr ""
 "desventaja de que puedes pasar por alto traducir el contenido, cuando la "
 "traducción principal haya cambiado su significado."
 
-#: pages/index.astro:129
+#: pages/index.astro:132
 msgid ""
 "The first approach of using direct translations, is more often advised to be "
 "used."
@@ -148,23 +153,23 @@ msgstr ""
 "Se aconseja utilizar más a menudo el primer enfoque, que consiste en "
 "utilizar traducciones directas."
 
-#: pages/index.astro:134
+#: pages/index.astro:137
 msgid "Direct placing"
 msgstr "Colocación directa"
 
-#: pages/index.astro:135 pages/index.astro:152
+#: pages/index.astro:138 pages/index.astro:155
 msgid "Example"
 msgstr "Ejemplo"
 
-#: pages/index.astro:151
+#: pages/index.astro:154
 msgid "Keyed placing"
 msgstr "Colocación con llave"
 
-#: pages/index.astro:165
+#: pages/index.astro:168
 msgid "3b. Placing links"
 msgstr "3b. Colocación de enlaces"
 
-#: pages/index.astro:168
+#: pages/index.astro:171
 msgid ""
 "This skeleton also comes with a helper to place localized links within your "
 "project."
@@ -172,15 +177,15 @@ msgstr ""
 "Este esqueleto también viene con un ayudante para colocar enlaces "
 "localizados dentro de tu proyecto."
 
-#: pages/index.astro:176
+#: pages/index.astro:179
 msgid "Link to /about while staying in the current language"
 msgstr "Enlazar a /acerca de permaneciendo en la lengua actual"
 
-#: pages/index.astro:177
+#: pages/index.astro:180
 msgid "Link to the english version of /about"
 msgstr "Enlace a la versión en inglés de /about"
 
-#: pages/index.astro:178
+#: pages/index.astro:181
 msgid "Link to the english version of /about including the full domain"
 msgstr "Enlace a la versión en inglés de /about incluyendo el dominio completo"
 
