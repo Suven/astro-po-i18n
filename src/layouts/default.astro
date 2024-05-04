@@ -1,33 +1,32 @@
 ---
 import { Image } from "astro:assets";
-import { locale, locales, mainLocale } from "../utils/i18n";
+import { locale, locales, mainLocale, url } from "../utils/i18n";
 import gt from "../utils/i18n";
 import iconGh from "../../assets/E045.svg";
 import iconWorld from "../../assets/1F310.svg";
 
-const baseLang = `${Astro.site}${Astro.url.pathname}`;
-const alternateLanguages = locales
-    .filter((l) => l !== locale)
-    .map((l) => ({
-        lang: l,
-        href:
-            l === mainLocale
-                ? baseLang
-                : `${Astro.site}${l}${Astro.url.pathname}`,
-    }));
+const alternateLanguages = locales.filter((l) => l !== locale);
+const pathWithoutBase = Astro.url.pathname.replace(
+    import.meta.env.BASE_URL,
+    "",
+);
 ---
 
 <html lang={locale}>
     <head>
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="alternate" href={baseLang} hreflang="x-default" />
+        <link
+            rel="alternate"
+            href={url("/", mainLocale, true)}
+            hreflang="x-default"
+        />
         {
             alternateLanguages.map((l) => (
                 <link
                     rel="alternate"
-                    href={l.href}
-                    hreflang={l.lang}
+                    href={url(pathWithoutBase, l, true)}
+                    hreflang={l}
                     type="text/html"
                 />
             ))
@@ -47,15 +46,24 @@ const alternateLanguages = locales
                     </li>
                 </ul>
                 <ul>
+                    <li>
+                        <a href={url("/")}>Home</a>
+                    </li>
+                    <li>
+                        <a href={url("/thanks")}>Thanks</a>
+                    </li>
+                </ul>
+                <ul>
                     <li>{locale}</li>
                     {
                         locales
                             .filter((l) => l !== locale)
                             .map((l) => (
                                 <li>
-                                    <a href={`/${l}${Astro.url.pathname}`}>
-                                        {l}
-                                    </a>
+                                    <a
+                                        href={url(pathWithoutBase, l)}
+                                        set:html={l}
+                                    />
                                 </li>
                             ))
                     }

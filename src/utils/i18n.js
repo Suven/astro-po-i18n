@@ -27,7 +27,25 @@ gt.on(
       `\x1b[1m\x1b[38;5;208m${new Date().toLocaleTimeString("it-IT")} \x1b[0m\x1b[38;5;208m[i18n]\x1b[0m ${error}`,
     ),
 );
+
 gt.setLocale(locale);
 
+const url = (path, lang, fqdn) => {
+  if (!lang) {
+    lang = locale;
+  }
+
+  const domain = fqdn ? import.meta.env.SITE : "";
+  const base = import.meta.env.BASE_URL ? `${import.meta.env.BASE_URL}/` : "";
+  const langPart =
+    lang === mainLocale ||
+    (import.meta.env.MODE === "development" && lang === locale)
+      ? ""
+      : `${lang}/`;
+  const safePath = path.replace(/^\//, "");
+
+  return `${domain}${base}${langPart}${safePath}`;
+};
+
 export default gt;
-export { locale, locales, mainLocale };
+export { locale, locales, mainLocale, url };
