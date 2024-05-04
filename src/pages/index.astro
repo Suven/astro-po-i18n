@@ -77,8 +77,8 @@ import tutTerminal from "../../assets/terminal.gif";
     <ol>
         <li>
             <code
-                ><tt>git clone git@github.com:Suven/astro-po-i18n.git</tt
-                ></code>
+                ><tt>git clone git@github.com:Suven/astro-po-i18n.git</tt></code
+            >
         </li>
         <li><code><tt>npm i</tt></code></li>
     </ol>
@@ -159,6 +159,23 @@ import gt from "../utils/i18n";
 <div>{gt.gettext("optionalContext", "key")}</div>
 <div>{gt.gettext("key")}</div>
 <div>{gt.ngettext("key.singular", "key.plural", numberOfThings)}</div>`}
+        lang="astro"
+    />
+
+    <h3>{gt.gettext("3b. Placing links")}</h3>
+    <p
+        set:html={gt.gettext(
+            "This skeleton also comes with a helper to place localized links within your project.",
+        )}
+    />
+    <Code
+        code={`---
+import { url } from "../utils/i18n";
+---
+
+<a href={url('/about')}>${gt.gettext("Link to /about while staying in the current language")}</a>
+<a href={url('/about', 'en')}>${gt.gettext("Link to the english version of /about")}</a>
+<a href={url('/about', 'en', true)}>${gt.gettext("Link to the english version of /about including the full domain")}</a>`}
         lang="astro"
     />
 

@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"POT-Creation-Date: 2024-05-04 18:47+0200\n"
-"PO-Revision-Date: 2024-05-04 18:47+0200\n"
+"POT-Creation-Date: 2024-05-04 20:07+0200\n"
+"PO-Revision-Date: 2024-05-04 20:08+0200\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: es\n"
@@ -14,7 +14,7 @@ msgstr ""
 "X-Poedit-Mapping: astro=gettext:JavaScript\n"
 "X-Poedit-SearchPath-0: .\n"
 
-#: layouts/default.astro:46 pages/index.astro:15
+#: layouts/default.astro:45 layouts/default.astro:83 pages/index.astro:15
 msgid "astro-po-i18n"
 msgstr "astro-po-i18n"
 
@@ -161,83 +161,102 @@ msgid "Keyed placing"
 msgstr "Colocación con llave"
 
 #: pages/index.astro:165
-msgid "4. Start translating"
-msgstr "4. Empieza a traducir"
+msgid "3b. Placing links"
+msgstr "3b. Colocación de enlaces"
 
 #: pages/index.astro:168
 msgid ""
-"This tutorial continues using <a href='https://poedit.net/'>Poedit</a> which "
-"is a powerful and commonly used tool for handling po-files. You are free to "
-"use any of the various alternatives though."
+"This skeleton also comes with a helper to place localized links within your "
+"project."
 msgstr ""
-"Este tutorial sigue utilizando <a href='https://poedit.net/'>Poedit</a>, que "
-"es una herramienta potente y de uso común para manejar archivos po. No "
-"obstante, eres libre de utilizar cualquiera de las distintas alternativas."
+"Este esqueleto también viene con un ayudante para colocar enlaces "
+"localizados dentro de tu proyecto."
 
-#: pages/index.astro:173 pages/index.astro:182
-msgid ""
-"Start by creating a new translation via <kbd>CMD+N</kbd> and choosing the "
-"target language. Store that with <kbd>CMD+S</kbd> in the locales folder like "
-"(for example) <code>es.po</code>."
-msgstr ""
-"Empieza creando una nueva traducción con <kbd>CMD+N</kbd> y eligiendo el "
-"idioma de destino. Guárdala con <kbd>CMD+S</kbd> en la carpeta de locales "
-"como (por ejemplo) <code>es.po</code>."
+#: pages/index.astro:176
+msgid "Link to /about while staying in the current language"
+msgstr "Enlazar a /acerca de permaneciendo en la lengua actual"
+
+#: pages/index.astro:177
+msgid "Link to the english version of /about"
+msgstr "Enlace a la versión en inglés de /about"
 
 #: pages/index.astro:178
-msgid "creating a new translation within poedit"
-msgstr "crear una nueva traducción en poedit"
+msgid "Link to the english version of /about including the full domain"
+msgstr "Enlace a la versión en inglés de /about incluyendo el dominio completo"
 
-#: pages/index.astro:187
-msgid ""
-"Next Poedit needs to know how to scan for things to translate. Click "
-"<code>Extract from sources</code> and within <code>paths</code>add the "
-"<code><tt>./src</tt></code> folder."
-msgstr ""
-"A continuación Poedit necesita saber cómo buscar cosas para traducir. Haz "
-"clic en <code>Extraer de las fuentes</code> y dentro de <code>las "
-"rutasañade</code>el directorio <code><tt>./src</tt></code> carpeta."
+#: pages/thanks.astro:9
+msgid "This is just an example subpage. Content might follow."
+msgstr "Esto es sólo una subpágina de ejemplo. El contenido puede seguir."
 
-#: pages/index.astro:190
-msgid "adding src as path to poedit"
-msgstr "añadir src como ruta a poedit"
+#~ msgid "4. Start translating"
+#~ msgstr "4. Empieza a traducir"
 
-#: pages/index.astro:193
-msgid ""
-"You can then translate by entering your translations to the bottom textarea. "
-"Notice how Poedit suggests translations on the right side from different "
-"sources."
-msgstr ""
-"A continuación, puedes traducir introduciendo tus traducciones en el área de "
-"texto inferior. Observa cómo Poedit te sugiere traducciones en la parte "
-"derecha de diferentes fuentes."
+#~ msgid ""
+#~ "This tutorial continues using <a href='https://poedit.net/'>Poedit</a> "
+#~ "which is a powerful and commonly used tool for handling po-files. You are "
+#~ "free to use any of the various alternatives though."
+#~ msgstr ""
+#~ "Este tutorial sigue utilizando <a href='https://poedit.net/'>Poedit</a>, "
+#~ "que es una herramienta potente y de uso común para manejar archivos po. "
+#~ "No obstante, eres libre de utilizar cualquiera de las distintas "
+#~ "alternativas."
 
-#: pages/index.astro:199
-msgid "Poedit also has useful stats that can be displayed."
-msgstr "Poedit también tiene estadísticas útiles que se pueden mostrar."
+#~ msgid ""
+#~ "Start by creating a new translation via <kbd>CMD+N</kbd> and choosing the "
+#~ "target language. Store that with <kbd>CMD+S</kbd> in the locales folder "
+#~ "like (for example) <code>es.po</code>."
+#~ msgstr ""
+#~ "Empieza creando una nueva traducción con <kbd>CMD+N</kbd> y eligiendo el "
+#~ "idioma de destino. Guárdala con <kbd>CMD+S</kbd> en la carpeta de locales "
+#~ "como (por ejemplo) <code>es.po</code>."
 
-#: pages/index.astro:205
-msgid ""
-"At last, just relaunch <code>npm run build:all</code> to build all languages "
-"for your page, <code>npm run dev</code> to preview your main language, or "
-"<code>npm run dev:es</code> to preview your spanish translation."
-msgstr ""
-"Por último, sólo tienes que volver a <code>ejecutar npm run build:all</code> "
-"para construir todos los idiomas de tu página, <code>npm</code> run dev para "
-"previsualizar tu idioma principal, o <code>npm run dev:es</code> para "
-"previsualizar tu traducción al español."
+#~ msgid "creating a new translation within poedit"
+#~ msgstr "crear una nueva traducción en poedit"
 
-#: pages/index.astro:210
-msgid ""
-"Building all languages might look like this. Notice the warnings for missing "
-"translations."
-msgstr ""
-"Construir todas las lenguas podría tener este aspecto. Observa las "
-"advertencias sobre las traducciones que faltan."
+#~ msgid ""
+#~ "Next Poedit needs to know how to scan for things to translate. Click "
+#~ "<code>Extract from sources</code> and within <code>paths</code>add the "
+#~ "<code><tt>./src</tt></code> folder."
+#~ msgstr ""
+#~ "A continuación Poedit necesita saber cómo buscar cosas para traducir. Haz "
+#~ "clic en <code>Extraer de las fuentes</code> y dentro de <code>las "
+#~ "rutasañade</code>el directorio <code><tt>./src</tt></code> carpeta."
 
-#: pages/index.astro:215
-msgid "The result can be seen here ;)"
-msgstr "El resultado puede verse aquí ;)"
+#~ msgid "adding src as path to poedit"
+#~ msgstr "añadir src como ruta a poedit"
+
+#~ msgid ""
+#~ "You can then translate by entering your translations to the bottom "
+#~ "textarea. Notice how Poedit suggests translations on the right side from "
+#~ "different sources."
+#~ msgstr ""
+#~ "A continuación, puedes traducir introduciendo tus traducciones en el área "
+#~ "de texto inferior. Observa cómo Poedit te sugiere traducciones en la "
+#~ "parte derecha de diferentes fuentes."
+
+#~ msgid "Poedit also has useful stats that can be displayed."
+#~ msgstr "Poedit también tiene estadísticas útiles que se pueden mostrar."
+
+#~ msgid ""
+#~ "At last, just relaunch <code>npm run build:all</code> to build all "
+#~ "languages for your page, <code>npm run dev</code> to preview your main "
+#~ "language, or <code>npm run dev:es</code> to preview your spanish "
+#~ "translation."
+#~ msgstr ""
+#~ "Por último, sólo tienes que volver a <code>ejecutar npm run build:all</"
+#~ "code> para construir todos los idiomas de tu página, <code>npm</code> run "
+#~ "dev para previsualizar tu idioma principal, o <code>npm run dev:es</code> "
+#~ "para previsualizar tu traducción al español."
+
+#~ msgid ""
+#~ "Building all languages might look like this. Notice the warnings for "
+#~ "missing translations."
+#~ msgstr ""
+#~ "Construir todas las lenguas podría tener este aspecto. Observa las "
+#~ "advertencias sobre las traducciones que faltan."
+
+#~ msgid "The result can be seen here ;)"
+#~ msgstr "El resultado puede verse aquí ;)"
 
 #~ msgid "Home"
 #~ msgstr "Inicio"
