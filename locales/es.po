@@ -1,0 +1,236 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"POT-Creation-Date: 2024-05-04 18:30+0200\n"
+"PO-Revision-Date: 2024-05-04 18:30+0200\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: es\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 3.4.2\n"
+"X-Poedit-Basepath: ../src\n"
+"X-Poedit-Mapping: astro=gettext:JavaScript\n"
+"X-Poedit-SearchPath-0: .\n"
+
+#: layouts/default.astro:46 layouts/default.astro:78 pages/index.astro:14
+msgid "astro-po-i18n"
+msgstr "astro-po-i18n"
+
+#: layouts/default.astro:50
+msgid "Home"
+msgstr "Inicio"
+
+#: layouts/default.astro:53
+msgid "Build Targets"
+msgstr "Construir objetivos"
+
+#: pages/index.astro:17
+msgid ""
+"With this skeleton for astro, you can jumpstart an multilingual site that is "
+"translated via standard gettext and <code>.po</code> files."
+msgstr ""
+"Con este esqueleto para astro, puedes poner en marcha un sitio multilingüe "
+"que se traduzca mediante archivos gettext y <code>.po</code> estándar."
+
+#: pages/index.astro:23
+msgid ""
+"This approach has many advantages, as well as some disadvantages when "
+"compared to astros default approach to i18n:"
+msgstr ""
+"Este enfoque tiene muchas ventajas, así como algunas desventajas en "
+"comparación con el enfoque por defecto de astros para i18n:"
+
+#: pages/index.astro:31
+msgid "Write your content/astro-files only once instead one per translation"
+msgstr ""
+"Escribe tus contenidos/archivos astrológicos una sola vez en lugar de una "
+"por traducción"
+
+#: pages/index.astro:38
+msgid "Translators can handle the format even without dev knowladge"
+msgstr ""
+"Los traductores pueden manejar el formato incluso sin conocimientos de "
+"desarrollo"
+
+#: pages/index.astro:45
+msgid "You can use services like crowdin to let users translate"
+msgstr "Puedes utilizar servicios como crowdin para que los usuarios traduzcan"
+
+#: pages/index.astro:50
+msgid "Poedit enables you to translate with AI"
+msgstr "Poedit te permite traducir con IA"
+
+#: pages/index.astro:53
+msgid "SEO-Safe"
+msgstr "SEO-Seguro"
+
+#: pages/index.astro:56
+msgid "Warns you about missing translations"
+msgstr "Te avisa de las traducciones que faltan"
+
+#: pages/index.astro:59
+msgid "Builds all translations at once"
+msgstr "Construye todas las traducciones a la vez"
+
+#: pages/index.astro:62
+msgid "Previews only one translation at a time"
+msgstr "Previsualiza sólo una traducción a la vez"
+
+#: pages/index.astro:65
+msgid "no translatable URLs"
+msgstr "sin URL traducibles"
+
+#: pages/index.astro:68
+msgid "1. Install"
+msgstr "1. Instala"
+
+#: pages/index.astro:72
+msgid "Just run these two commands, to receive this basic skeleton:"
+msgstr ""
+"Sólo tienes que ejecutar estos dos comandos, para recibir este esqueleto "
+"básico:"
+
+#: pages/index.astro:82
+msgid "2. Adjust your setup"
+msgstr "2. Ajusta tu configuración"
+
+#: pages/index.astro:86
+msgid ""
+"Specify which languages you wish to support and which is your main one, "
+"within <code><tt>utils/i18n.js</tt></code>:"
+msgstr ""
+"Especifica qué idiomas deseas admitir y cuál es el principal, dentro de "
+"<code><tt>utils/i18n.js</tt></code>:"
+
+#: pages/index.astro:97
+msgid ""
+"For SEO-safety you are also advised to configure your final domain within "
+"<code><tt>astro.config.mjs</tt></code>:"
+msgstr ""
+"Por seguridad SEO, también se recomienda configurar el dominio final en "
+"<code><tt>astro.config.mjs</tt></code>:"
+
+#: pages/index.astro:104
+msgid "You might also want to delete all already shipped translations"
+msgstr "Puede que también quieras borrar todas las traducciones ya enviadas"
+
+#: pages/index.astro:109
+msgid "3. Place your texts"
+msgstr "3. Coloca tus textos"
+
+#: pages/index.astro:112
+msgid ""
+"There are two workflow flavours in the gettext-communities. The common way "
+"is to just place your texts in your main language (commonly english) "
+"directly within your templates. That way you are not using keys and give "
+"translators a better context of what you want to be translated. It also "
+"makes sure that your main language is always fully translated."
+msgstr ""
+"Hay dos tipos de flujo de trabajo en las comunidades gettext. La forma más "
+"común es colocar tus textos en tu idioma principal (normalmente inglés) "
+"directamente dentro de tus plantillas. De esta forma no utilizas claves y "
+"das a los traductores un mejor contexto de lo que quieres traducir. También "
+"te aseguras de que tu idioma principal esté siempre totalmente traducido."
+
+#: pages/index.astro:118
+msgid ""
+"The other approach uses keys, that then first need to be translated into "
+"your main language. It leaves your content responsible colleagues more "
+"freedom but makes it harder for translators. It also comes with the "
+"disadvantage that you might overlook to translate content, when the main "
+"translation changed its meaning."
+msgstr ""
+"El otro enfoque utiliza claves, que luego hay que traducir primero a tu "
+"lengua principal. Deja más libertad a tus colegas responsables de "
+"contenidos, pero se lo pone más difícil a los traductores. También tiene la "
+"desventaja de que puedes pasar por alto traducir el contenido, cuando la "
+"traducción principal haya cambiado su significado."
+
+#: pages/index.astro:124
+msgid ""
+"The first approach of using direct translations, is more often advised to be "
+"used."
+msgstr ""
+"Se aconseja utilizar más a menudo el primer enfoque, que consiste en "
+"utilizar traducciones directas."
+
+#: pages/index.astro:129
+msgid "Direct placing"
+msgstr "Colocación directa"
+
+#: pages/index.astro:130 pages/index.astro:147
+msgid "Example"
+msgstr "Ejemplo"
+
+#: pages/index.astro:146
+msgid "Keyed placing"
+msgstr "Colocación con llave"
+
+#: pages/index.astro:160
+msgid "4. Start translating"
+msgstr "4. Empieza a traducir"
+
+#: pages/index.astro:163
+msgid ""
+"This tutorial continues using <a href='https://poedit.net/'>Poedit</a> which "
+"is a powerful and commonly used tool for handling po-files. You are free to "
+"use any of the various alternatives though."
+msgstr ""
+"Este tutorial sigue utilizando <a href='https://poedit.net/'>Poedit</a>, que "
+"es una herramienta potente y de uso común para manejar archivos po. No "
+"obstante, eres libre de utilizar cualquiera de las distintas alternativas."
+
+#: pages/index.astro:168 pages/index.astro:177
+msgid ""
+"Start by creating a new translation via <kbd>CMD+N</kbd> and choosing the "
+"target language. Store that with <kbd>CMD+S</kbd> in the locales folder like "
+"(for example) <code>es.po</code>."
+msgstr ""
+"Empieza creando una nueva traducción con <kbd>CMD+N</kbd> y eligiendo el "
+"idioma de destino. Guárdala con <kbd>CMD+S</kbd> en la carpeta de locales "
+"como (por ejemplo) <code>es.po</code>."
+
+#: pages/index.astro:173
+msgid "creating a new translation within poedit"
+msgstr "crear una nueva traducción en poedit"
+
+#: pages/index.astro:182
+msgid ""
+"Next Poedit needs to know how to scan for things to translate. Click "
+"<code>Extract from sources</code> and within <code>paths</code>add the "
+"<code><tt>./src</tt></code> folder."
+msgstr ""
+"A continuación Poedit necesita saber cómo buscar cosas para traducir. Haz "
+"clic en <code>Extraer de las fuentes</code> y dentro de <code>las "
+"rutasañade</code>el directorio <code><tt>./src</tt></code> carpeta."
+
+#: pages/index.astro:185
+msgid "adding src as path to poedit"
+msgstr "añadir src como ruta a poedit"
+
+#: pages/index.astro:188
+msgid ""
+"You can then translate by entering your translations to the bottom textarea. "
+"Notice how Poedit suggests translations on the right side from different "
+"sources."
+msgstr ""
+"A continuación, puedes traducir introduciendo tus traducciones en el área de "
+"texto inferior. Observa cómo Poedit te sugiere traducciones en la parte "
+"derecha de diferentes fuentes."
+
+#: pages/index.astro:194
+msgid "Poedit also has useful stats that can be displayed."
+msgstr "Poedit también tiene estadísticas útiles que se pueden mostrar."
+
+#: pages/index.astro:200
+msgid ""
+"At last, just relaunch <code>npm run build:all</code> to build all languages "
+"for your page, <code>npm run dev</code> to preview your main language, or "
+"<code>npm run dev:es</code> to preview your spanish translation."
+msgstr ""
+"Por último, sólo tienes que volver a <code>ejecutar npm run build:all</code> "
+"para construir todos los idiomas de tu página, <code>npm</code> run dev para "
+"previsualizar tu idioma principal, o <code>npm run dev:es</code> para "
+"previsualizar tu traducción al español."

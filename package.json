@@ -1,0 +1,21 @@
+{
+  "name": "fe",
+  "type": "module",
+  "version": "0.0.1",
+  "scripts": {
+    "dev": "astro dev",
+    "dev:de": "locale=de astro dev",
+    "dev:es": "locale=es astro dev",
+    "start": "astro dev",
+    "build": "astro build",
+    "build:all": "node crossbuild.mjs",
+    "preview": "astro preview",
+    "astro": "astro"
+  },
+  "dependencies": {
+    "astro": "^4.7.1",
+    "gettext-parser": "^8.0.0",
+    "node-gettext": "^3.0.0",
+    "sprintf-js": "^1.1.3"
+  }
+}

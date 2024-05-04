@@ -1,0 +1,98 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-05-04 18:11+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=CHARSET\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: src/pages/index.astro:11
+msgid "astro-po-i18n"
+msgstr ""
+
+#: src/pages/index.astro:14
+msgid ""
+"With this skeleton for astro, you can jumpstart an multilingual site that is "
+"translated via standard gettext and <code>.po</code> files."
+msgstr ""
+
+#: src/pages/index.astro:20
+msgid ""
+"This approach has many advantages, as well as some disadvantages when "
+"compared to astros default approach to i18n:"
+msgstr ""
+
+#: src/pages/index.astro:28
+msgid "Write your content/astro-files only once instead one per translation"
+msgstr ""
+
+#: src/pages/index.astro:35
+msgid "Translators can handle the format even without dev knowladge"
+msgstr ""
+
+#: src/pages/index.astro:42
+msgid "You can use services like crowdin to let users translate"
+msgstr ""
+
+#: src/pages/index.astro:47
+msgid "Poedit enables you to translate with AI"
+msgstr ""
+
+#: src/pages/index.astro:50
+msgid "SEO-Safe"
+msgstr ""
+
+#: src/pages/index.astro:53
+msgid "Warns you about missing translations"
+msgstr ""
+
+#: src/pages/index.astro:56
+msgid "Builds all translations at once"
+msgstr ""
+
+#: src/pages/index.astro:59
+msgid "Previews only one translation at a time"
+msgstr ""
+
+#: src/pages/index.astro:62
+msgid "no translatable URLs"
+msgstr ""
+
+#: src/pages/index.astro:65
+msgid "1. Install"
+msgstr ""
+
+#: src/pages/index.astro:69
+msgid "Just run these two commands, to receive this basic skeleton:"
+msgstr ""
+
+#: src/pages/index.astro:79
+msgid "2. Adjust your setup"
+msgstr ""
+
+#: src/pages/index.astro:83
+msgid ""
+"Specify which languages you wish to support and which is your main one, "
+"within <code><tt>utils/i18n.js</tt></code>:"
+msgstr ""
+
+#: src/pages/index.astro:94
+msgid ""
+"For SEO-safety you are also advised to configure your final domain within "
+"<code><tt>astro.config.mjs</tt></code>:"
+msgstr ""
+
+#: src/pages/index.astro:101
+msgid "You might also want to delete all already shipped translations"
+msgstr ""

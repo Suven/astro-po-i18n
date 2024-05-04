@@ -1,0 +1,79 @@
+---
+import { Image } from "astro:assets";
+import { locale, locales, mainLocale } from "../utils/i18n";
+import gt from "../utils/i18n";
+import iconGh from "../../assets/E045.svg";
+import iconWorld from "../../assets/1F310.svg";
+
+const baseLang = `${Astro.site}${Astro.url.pathname}`;
+const alternateLanguages = locales
+    .filter((l) => l !== locale)
+    .map((l) => ({
+        lang: l,
+        href:
+            l === mainLocale
+                ? baseLang
+                : `${Astro.site}${l}${Astro.url.pathname}`,
+    }));
+---
+
+<html lang={locale}>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="alternate" href={baseLang} hreflang="x-default" />
+        {
+            alternateLanguages.map((l) => (
+                <link
+                    rel="alternate"
+                    href={l.href}
+                    hreflang={l.lang}
+                    type="text/html"
+                />
+            ))
+        }
+        <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.classless.blue.min.css"
+        />
+    </head>
+    <body>
+        <header>
+            <nav>
+                <ul>
+                    <li>
+                        <Image src={iconWorld} height="32" alt="" />
+                        <strong>{gt.gettext("astro-po-i18n")}</strong>
+                    </li>
+                </ul>
+                <ul>
+                    <li>{locale}</li>
+                    {
+                        locales
+                            .filter((l) => l !== locale)
+                            .map((l) => (
+                                <li>
+                                    <a href={`/${l}${Astro.url.pathname}`}>
+                                        {l}
+                                    </a>
+                                </li>
+                            ))
+                    }
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+            <article>
+                <slot />
+            </article>
+        </main>
+
+        <footer>
+            <a href="https://github.com/Suven/astro-po-i18n">
+                <Image src={iconGh} height="24" alt="" />
+                <span>{gt.gettext("astro-po-i18n")}</span>
+            </a>
+        </footer>
+    </body>
+</html>
